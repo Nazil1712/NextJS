@@ -1,4 +1,4 @@
-export default function Reviews({params}) {
+export default function ReviewsDetails({params}) {
     const {reviewId, productId} = params;
 
     return (
