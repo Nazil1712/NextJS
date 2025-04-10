@@ -1,6 +1,6 @@
-export default function ProductDetails({params}) {
+export default async function ProductDetails({params}) {
     
-    const {productId} = params;
+    const {productId} = await params;
 
     return (
         <>
