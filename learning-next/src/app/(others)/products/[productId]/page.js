@@ -1,3 +1,12 @@
+export const generateMetadata = async({params}) =>{
+    const {productId} = await params
+
+    return {
+        title : `Product ${productId}`
+    }
+}
+
+
 export default async function ProductDetails({params}) {
     
     const {productId} = await params;
