@@ -3,8 +3,8 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <h1>Welcome to Home</h1>
-      <Link href={"/about"}>
+      <h1 className="text-5xl ml-7">Welcome to Home</h1>
+      {/* <Link href={"/about"}>
         <p className="border m-5 rounded-2xl border-blue-600 inline-block hover:bg-blue-600 hover:text-white p-3 hover:cursor-pointer">
           About Us
         </p>
@@ -15,13 +15,18 @@ export default function Home() {
           Profile Page
         </p>
       </Link>
-
       <br />
       <Link href={"/products"}>
         <p className="border m-5 rounded-2xl border-blue-600 inline-block hover:bg-blue-600 hover:text-white p-3 hover:cursor-pointer">
           View Products
         </p>
-      </Link>
+      </Link> */}
+
+      <div className="mt-7">
+        <Link href={"/article/breaking-news-123?lang=en"} className="mr-7 ml-7">
+          Read Articles
+        </Link>
+      </div>
     </>
   );
 }

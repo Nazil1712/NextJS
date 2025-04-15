@@ -18,7 +18,7 @@ const SluggishDocsDetails = async ({ params }) => {
       );
   }
   else if (slug?.length == 3) {
-    return (
+    return (  
         <div>
           <h1>Viewing Docs for Feature {slug[0]} and Concept {slug[1]} and example {slug[2]}</h1>
         </div>
