@@ -1,8 +1,24 @@
+'use client';
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
+import { use } from "react";
 
-export default async function Article({ params, searchParams }) {
-  const { articleId } = await params;
-  const { lang = "en" } = await searchParams;
+export default function Article({ params}) {
+
+  /* 1) This will only work when our component is Async(Server side component) */
+  /* const {articleId} = await params;
+  const { lang = "en" } = await searchParams; */
+
+
+  /* 2) Using use() hook of React - For Client Component */
+  /* const { articleId } = use(params);
+  const {lang = 'en'} = use(searchParams); */
+
+
+  /* 3) Using useSearchParams() hook of React -  To use this remove searchParams from Props */
+  const {articleId} = use(params);
+  const searchParams = useSearchParams();
+  const lang = searchParams.get('lang');
 
   console.log(lang);
 
