@@ -1,11 +1,14 @@
-import {notFound} from "next/navigation";
+import {notFound, redirect} from "next/navigation";
 
 
 export default async function ReviewsDetails({params}) {
     const {reviewId, productId} = await params;
 
     if(Number(reviewId) > 1000) {
-        notFound();
+        // notFound();
+        
+        /* Calling redirect() function */
+        redirect("/products")
     }
     
     return (

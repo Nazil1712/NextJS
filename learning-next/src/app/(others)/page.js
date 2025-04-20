@@ -26,6 +26,7 @@ export default function Home() {
         <Link href={"/article/breaking-news-123?lang=en"} className="mr-7 ml-7">
           Read Articles
         </Link>
+        <Link href={'/order-product'} className="mr-7 ml-7">Order The Product</Link>
       </div>
     </>
   );
