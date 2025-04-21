@@ -16,8 +16,7 @@ export default function AuthLayout({ children }) {
   const [input, setInput] = useState("");
 
   return (
-    <html>
-      <body>
+      <>
         <div>
           <input type="text" value={input} className="border-black border-2" onChange={(e)=>{
             setInput(e.target.value)
@@ -39,7 +38,6 @@ export default function AuthLayout({ children }) {
           })}
         </div>
         {children}
-      </body>
-    </html>
+      </>
   );
 }
