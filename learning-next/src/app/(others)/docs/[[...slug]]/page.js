@@ -1,3 +1,8 @@
+export const metadata = {
+  title: "Docs",
+  description: "This is Docs page by Nazil"
+}
+
 const SluggishDocsDetails = async ({ params }) => {
   const { slug } = await params;
 

@@ -17,27 +17,28 @@ export default function AuthLayout({ children }) {
 
   return (
       <>
-        <div>
+        {children}
+
+        <div className="m-5">
           <input type="text" value={input} className="border-black border-2" onChange={(e)=>{
             setInput(e.target.value)
           }}/>
         </div>
-        <div>
+        <div className="flex">
           {navlinks.map((v) => {
             const isActive = v.href == pathname;
-
+            
             console.log(isActive)
 
             return (
               <div key={v.name}>
                 <Link href={v.href}>
-                  <span className={`${isActive ? 'text-blue-400':''} mb-14`}>{v.name}</span>
+                  <span className={`${isActive ? 'text-blue-400':''} m-5`}>{v.name}</span>
                 </Link>
               </div>
             );
           })}
         </div>
-        {children}
       </>
   );
 }

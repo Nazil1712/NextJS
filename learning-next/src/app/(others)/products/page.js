@@ -1,6 +1,8 @@
 import Link from "next/link";
+import { notFound } from "next/navigation";
 
 export default function ProductList() {
+  // notFound();
   return (
     <>
       <h1>Product List</h1>

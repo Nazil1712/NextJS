@@ -2,7 +2,7 @@ export const metadata = {
     // title : "About Nazil's NextJs Website",
     
     /*   
-        Use this absoloute : {}, when you don't want to use 
+        Use this absolute : {}, when you don't want to use 
         template's metadata title
     */
 

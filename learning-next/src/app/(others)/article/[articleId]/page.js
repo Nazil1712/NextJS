@@ -28,7 +28,9 @@ export default function Article({ params}) {
         <h1>News Article Id :- {articleId}</h1>
         <p>
           Reading in Language :-{" "}
-          {lang == "en" ? "English" : (lang == "fr" ? "French" : "Spanish")}
+          {lang == "en" ? "English" : 
+          (lang == "fr" ? "French" : 
+          lang == "es" ? "Spanish" : " ")}
         </p>
       </div>
 

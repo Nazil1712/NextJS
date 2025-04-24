@@ -1,5 +1,5 @@
 import Image from "next/image"
-import img from "../../../public/How_To_Bury_The_Deceased1.jpg"
+import img from "../../../../public/How_To_Bury_The_Deceased1.jpg"
 
 export default function Nazil() {
     return (
