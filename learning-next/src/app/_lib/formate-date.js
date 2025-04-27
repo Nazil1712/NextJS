@@ -1,3 +1,3 @@
-const formateDate = () =>{
+/* const formateDate = () =>{
     // Logic for formatting date
-}
+} */

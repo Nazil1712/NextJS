@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import '../globals.css'
 // import "./globals.css"
 
@@ -15,8 +16,8 @@ export default function NonAuthLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <header className='bg-blue-400 p-4'>
-          <p>Header</p>
+        <header className='bg-blue-400 p-4 flex justify-end'>
+          <Link className='bg-white p-2 rounded-2xl' href={'/products'}>Products</Link>
         </header>
 
         {children}
