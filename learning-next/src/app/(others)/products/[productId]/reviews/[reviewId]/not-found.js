@@ -17,7 +17,7 @@ export default function NotFound() {
 
     return (
         <>
-        <h1>Review Not Found for Product {productId} and for review {reviewId}</h1>
+            <h1 className="text-red-700 text-6xl">Review Not Found for Product {productId} and for review {reviewId}</h1>
         </>
     )
 }

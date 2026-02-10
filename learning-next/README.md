@@ -15,3 +15,5 @@
     <a href="https://nextjs.org/docs/app/getting-started/project-structure#component-hierarchy">Visit NextJs Offical Documentation</a>
 
     <img src="./public/image.jpg"/>
+
+10. "_lib" is private folder,  Will not be visible at browser - meaning => not accessible at ```http://localhost:3000/_lib```

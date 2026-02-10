@@ -1,15 +1,15 @@
-import Counter from "./counter"
+import Counter from "./Counter"
 
 export const metadata = {
-    title : "Counter app",
+  title : {
+    default : "Counter"
+  }
 }
 
-
 export default function CounterPage() {
-    return (
-        <>
-        
-        <Counter />
-        </>
-    )
+  return (
+    <>
+      <Counter/>
+    </>
+  )
 }

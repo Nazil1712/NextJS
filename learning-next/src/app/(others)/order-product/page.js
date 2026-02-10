@@ -8,8 +8,8 @@ export default function OrderProduct() {
 
     const handleClick = () =>{
         console.log("Your has been placed successfully")
-        // router.push('/order-success')
-        router.replace('/order-success')  // This will remove the current page from history (from which you hit the button)
+        router.push('/order-success')
+        // router.replace('/order-success')  // This will remove the current page from history (from which you hit the button)
         // router.back()
         // router.refresh()
     }   

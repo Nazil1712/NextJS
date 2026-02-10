@@ -6,7 +6,7 @@ export const metadata = {
 const SluggishDocsDetails = async ({ params }) => {
   const { slug } = await params;
 
-  console.log(slug);
+  console.log( "Slug : " ,slug);
 
   if (slug?.length == 1) {
     return (
@@ -29,13 +29,13 @@ const SluggishDocsDetails = async ({ params }) => {
         </div>
       );
   }
-  else{
-    return (
-      <div>
-        <h1>Docs default</h1>
-      </div>
-    );
-  }
+  // else{
+  //   return (
+  //     <div>
+  //       <h1>Docs default</h1>
+  //     </div>
+  //   );
+  // }
   return (
     <>
       <h1>Docs Home Page</h1>
