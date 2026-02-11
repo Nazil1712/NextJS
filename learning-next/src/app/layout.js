@@ -25,7 +25,9 @@ export default function NonAuthLayout({ children }) {
           </Link>
         </header>
 
-        <ErrorWrapper>{children}</ErrorWrapper>
+        {/* <ErrorWrapper> */}
+          {children}
+          {/* </ErrorWrapper> */}
 
         <footer className="bg-amber-400 p-4">
           <p>Footer</p>
