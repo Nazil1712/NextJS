@@ -10,6 +10,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <h1>Auth Page</h1>
       <body>{children}</body>
     </html>
   )

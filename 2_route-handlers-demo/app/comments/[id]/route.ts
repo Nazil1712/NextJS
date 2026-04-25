@@ -1,7 +1,7 @@
 import { comments } from "../data";
 
 export async function GET(
-  _request: Request,
+  _request: Request, // The underscore ( _ ) means: “This variable is intentionally unused”
   { params }: { params: Promise<{ id: string }> },
 ) {
   const { id } = await params;
@@ -12,18 +12,17 @@ export async function GET(
 
 
 export async function PATCH(
-    request: Request,
-    {params} : {params: Promise<{id: string}>}
+  request: Request,
+  { params }: { params: Promise<{ id: string }> },
 ) {
-    const {id} = await params;
-    const body = await request.json();
-    const {text} = body;
+  const { id } = await params;
+  const body = await request.json();
+  const { text } = body;
 
-    const index = comments.findIndex((comment)=>comment.id === Number(id))
-    comments[index].text = text;
-    return Response.json(comments[index])
+  const index = comments.findIndex((comment) => comment.id === Number(id));
+  comments[index].text = text;
+  return Response.json(comments[index]);
 }
-
 
 export async function DELETE(
   _request: Request,
@@ -32,7 +31,7 @@ export async function DELETE(
   const { id } = await params;
   const index = comments.findIndex((comment) => comment.id === Number(id));
   const deletedComment = comments[index];
-  comments.splice(index,1);
+  comments.splice(index, 1);
 
   return Response.json(deletedComment);
 }

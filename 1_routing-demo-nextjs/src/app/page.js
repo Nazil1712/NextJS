@@ -29,6 +29,9 @@ export default function Home() {
         <Link href={"/order-product"} className="mr-7 ml-7">
           Order The Product
         </Link>
+        <Link href={"/complex-dashboard"} className="mr-7 ml-7">
+          Complex DashBoard
+        </Link>
       </div>
     </>
   );

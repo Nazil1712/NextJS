@@ -20,6 +20,12 @@ export async function POST(request: Request) {
   };
 
   comments.push(newComment);
+
+
+  /* return Response.json(newComment); */ 
+  // We can also do like this - But It will give the success code of 200 - Which is Ok But for best practice ⬇️
+
+
   return new Response(JSON.stringify(newComment), {
     headers: { "Content-Type": "application/json" },
     status: 201,
